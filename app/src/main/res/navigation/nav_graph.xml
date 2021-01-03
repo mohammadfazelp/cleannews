@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/newsFragment">
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.faz.cleannews.ui.fragment.NewsFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/action_blankFragment_to_blankFragment2"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="com.faz.cleannews.ui.fragment.NewsDetailFragment"
+        android:label="fragment_blank_fragment2"
+        tools:layout="@layout/fragment_news_detail" />
+</navigation>
